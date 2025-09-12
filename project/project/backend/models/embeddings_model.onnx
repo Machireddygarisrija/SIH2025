@@ -1,0 +1,13 @@
+# This is a placeholder for the ONNX embedding model
+# In production, this would be a trained BERT/MiniLM model exported from Python
+# 
+# Training process (to be done separately in Python):
+# 1. Fine-tune sentence-transformers/all-MiniLM-L6-v2 on job descriptions
+# 2. Add domain-specific vocabulary for internships and skills
+# 3. Export to ONNX format using torch.onnx.export()
+# 4. Place the .onnx file in this location
+#
+# Model specifications:
+# - Input: Tokenized text (max 512 tokens)
+# - Output: 384-dimensional embeddings
+# - Optimized for semantic similarity in job/skill matching

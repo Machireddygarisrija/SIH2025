@@ -1,0 +1,13 @@
+# This is a placeholder for the ONNX bias detection model
+# In production, this would be a trained fairness model using AIF360
+#
+# Training process (to be done separately in Python):
+# 1. Train logistic regression with fairness constraints
+# 2. Use AIF360 library for bias mitigation
+# 3. Export to ONNX format
+# 4. Place the .onnx file in this location
+#
+# Model specifications:
+# - Input: Allocation distribution by category
+# - Output: Bias score (0-1, higher is better)
+# - Detects underrepresentation in allocations

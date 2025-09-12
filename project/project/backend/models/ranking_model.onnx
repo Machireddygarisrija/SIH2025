@@ -1,0 +1,13 @@
+# This is a placeholder for the ONNX ranking model
+# In production, this would be a trained LightGBM model exported to ONNX
+#
+# Training process (to be done separately in Python):
+# 1. Collect features: skill_overlap, location_distance, sector_match, diversity_score, etc.
+# 2. Train LightGBM learning-to-rank model on historical match quality data
+# 3. Export to ONNX using onnxmltools
+# 4. Place the .onnx file in this location
+#
+# Model specifications:
+# - Input: Feature vector [6 features]
+# - Output: Match score (0-100)
+# - Optimized for ranking internship matches
