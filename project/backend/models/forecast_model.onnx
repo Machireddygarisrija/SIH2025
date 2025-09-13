@@ -1,0 +1,13 @@
+# This is a placeholder for the ONNX forecasting model
+# In production, this would be a trained LSTM model for demand prediction
+#
+# Training process (to be done separately in Python):
+# 1. Collect historical internship application data
+# 2. Train LSTM model for time-series forecasting
+# 3. Export to ONNX using torch.onnx.export()
+# 4. Place the .onnx file in this location
+#
+# Model specifications:
+# - Input: Historical demand data (time series)
+# - Output: Forecasted demand by sector
+# - Helps optimize slot allocation
